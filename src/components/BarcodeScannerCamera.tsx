@@ -28,7 +28,7 @@ const BarcodeScannerCamera = () => {
       setScanResult(decodedText);
       console.log(`Scan berhasil: ${decodedText}`, decodedResult);
       // Anda bisa menghentikan scanner setelah berhasil scan
-      scannerRef.current?.clear();
+    //   scannerRef.current?.clear();
     };
 
     // Fungsi yang dipanggil saat scan gagal (dipanggil terus-menerus)

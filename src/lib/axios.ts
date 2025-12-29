@@ -6,3 +6,10 @@ export const axiosInstance = axios.create({
     "Content-Type": "application/json",
   },
 });
+
+axiosInstance.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    return Promise.reject(error.response?.data || error);
+  }
+);
